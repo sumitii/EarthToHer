@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Merchant Copy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merchant Copy'), local('MerchantCopy'),
+       url('./assets/Merchant_Copy.ttf') format('embedded-opentype'), /* IE6-IE8 */
+}
+
+body {
+  font-family: 'Merchant Copy';
+  color: #FFF;
+}
+
+.main{
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #d4996a;
+
+  &__leftSidebar{
+    background-color: #EF7B24;
+    height: 100vh;
+  }
+}
