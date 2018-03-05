@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'flexboxgrid/css/flexboxgrid.min.css';
 import faker from 'faker';
+import Navigation from './components/atoms/Navigation';
 import './App.scss';
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
             <h2>Earth to Her</h2>
           </div>
         </div>
-
+        <Navigation />
       </div>
     );
   }
