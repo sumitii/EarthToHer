@@ -1,0 +1,28 @@
+.button {
+    &--black {
+      background-color: #000;
+    }
+    &--brown {
+      background-color: #D2BFAE;
+    }
+
+    &--transparent {
+      background-color: transparent;
+    }
+  &__link {
+    border: none;
+    padding: 0;
+  }
+
+  &__circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  &__close {
+    width: 25px;
+    height: 25px;
+    border-radius: auto;
+  }
+}

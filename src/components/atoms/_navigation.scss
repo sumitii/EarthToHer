@@ -1,7 +1,9 @@
 .navigation {
   justify-content: flex-end;
   color: #FFF;
-  height: 100vh;
+  z-index: 100;
+  top: 0;
+  position: absolute;
 
   &__inner {
     background-color: #EF7B24;
@@ -9,6 +11,13 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
+    height: 100vh;
+  }
+
+  &__button {
+    position: absolute;
+    right: 25px;
+    top: 25px;
   }
 
   &__description {

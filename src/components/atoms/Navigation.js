@@ -1,14 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from './Button'
 import 'flexboxgrid/css/flexboxgrid.min.css';
 import './_navigation.scss';
 
 export default class Navigation extends React.Component {
-    static propTypes = {}
-
     render() {
       return (
         <div className='navigation row'>
+          <div className='navigation__button'>
+            <Button
+              buttonShape='close'
+              color='transparent'
+              onClick={this.props.closeNavigation}
+          >
+              <img src='../src/assets/close_button.svg' alt='close button' />
+            </Button>
+          </div>
           <div className='navigation__inner col-xs-12 col-sm-5'>
             <div className='navigation__description'>
               Earth to Her is an essential, guiding practice for
