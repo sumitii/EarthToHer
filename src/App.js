@@ -28,8 +28,8 @@ class App extends Component {
           headerCopy='Earth to Her'
           onClick={this.toggleNavigation.bind(this)}
         />
-        <div className='main__slide-in'>
-          <div className='main__video'>
+        <div className={`main__slide-in ${this.state.isNavigationHidden ? '' : 'main__nav-active'}`}>
+          <div className={`main__video${this.state.isNavigationHidden ? '' : '--nav-video-active'}`}>
             <img src={faker.image.image()} alt='earth-to-her-video' />
           </div>
         </div>
@@ -40,7 +40,7 @@ class App extends Component {
         </div>
         {!this.state.isNavigationHidden &&
           <Navigation
-          closeNavigation={this.toggleNavigation.bind(this)}
+            closeNavigation={this.toggleNavigation.bind(this)}
           />
         }
       </div>

@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Merchant Copy';
   font-style: normal;
-  font-weight: 400;
   src: local('Merchant Copy'), local('MerchantCopy'),
        url('./assets/Merchant_Copy.ttf') format('embedded-opentype'), /* IE6-IE8 */
 }
@@ -18,6 +17,17 @@
 }
 
 @keyframes fadeInVideo { from { opacity: 0; } to { opacity: 0.85; } }
+
+@keyframes opacityOverlay {
+  0% {
+    opacity: 0;
+    background: #EF7B24;
+  }
+  100% {
+    opacity: 0.5;
+    background: #EF7B24;
+  }
+}
 
 html {
   height: 100%;
@@ -52,7 +62,7 @@ body {
   }
 
     &__slide-in {
-      animation: slideUp 2s forwards;
+      animation: slideUp 1.5s forwards;
       animation-timing-function: ease-in;
       width: 100%;
       height: 100%;
@@ -65,10 +75,28 @@ body {
       align-items: center;
   }
 
+  &__nav-active {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: opacityOverlay 2s forwards;
+      }
+  }
+
   &__video {
     animation: fadeInVideo 1s forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1s;
     opacity: 0;
+
+    &--nav-video-active {
+      opacity: 1;
+      animation-delay: 0;
+      animation: none;
+    }
   }
 
   @media only screen and (max-width: 768px) {
