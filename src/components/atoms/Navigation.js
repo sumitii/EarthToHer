@@ -8,7 +8,7 @@ import CloseButton from '../../assets/close_button.svg'
 export default class Navigation extends React.Component {
     render() {
       return (
-        <div className={`navigation row ${this.props.closeNavigation ? 'navigation__active' : ''}`}>
+        <div className={`navigation row navigation__${this.props.navigationVisibility}`}>
           <div className='navigation__button'>
             <Button
               buttonShape='close'

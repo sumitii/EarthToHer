@@ -5,6 +5,8 @@ import faker from 'faker'
 import Navigation from './components/atoms/Navigation'
 import Button from './components/atoms/Button'
 import Header from './components/atoms/Header'
+import Footer from './components/atoms/Footer'
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './App.scss'
 
 class App extends Component {
@@ -38,13 +40,12 @@ class App extends Component {
             <h2>Earth to Her</h2>
           </div>
         </div>
-        {!this.state.isNavigationHidden &&
           <Navigation
             closeNavigation={this.toggleNavigation.bind(this)}
+            navigationVisibility={this.state.isNavigationHidden ? 'inactive' : 'active'}
           />
-        }
       </div>
-    );
+    )
   }
 }
 

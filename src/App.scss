@@ -5,6 +5,14 @@
        url('./assets/Merchant_Copy.ttf') format('embedded-opentype'), /* IE6-IE8 */
 }
 
+@font-face {
+  font-family: 'Prophet Light';
+  font-style: normal;
+  src: local('Prophet Light'), local('ProphetLight'),
+      url('./assets/Prophet/web/ProphetLight.woff') format("woff"),
+      url('./assets/Prophet/Prophet_Light.ttf') format('embedded-opentype'), /* IE6-IE8 */
+}
+
 @keyframes slideUp {
   0% {
     opacity: 0;
@@ -29,18 +37,42 @@
   }
 }
 
+@keyframes slideClosed {
+  0% {
+		transform: translateX(0%);
+	}	
+	100% {
+		transform: translateX(100%);
+	}	
+}
+
 html {
   height: 100%;
 }
 
 body {
-  font-family: 'Merchant Copy';
+  font-family: 'Prophet Light';
   letter-spacing: 0.4px;
   font-weight: 400;
   color: #FFF;
   height: inherit;
   display: flex;
   flex-direction: column;
+}
+
+.background-enter {
+  transform: translate(100%);
+}
+.background-enter.background-enter-active {
+  transform: translate(0%);
+  transition: transform 1000ms ease-in-out;
+}
+.background-leave {
+  transform: translate(0%);
+}
+.background-leave.background-leave-active {
+  transform: translate(-100%);
+  transition: transform 1000ms ease-in-out;
 }
 
 .main{
@@ -85,7 +117,7 @@ body {
         height: 100%;
         animation: opacityOverlay 2s forwards;
       }
-  }
+    }
 
   &__video {
     animation: fadeInVideo 1s forwards;
