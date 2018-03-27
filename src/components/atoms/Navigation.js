@@ -18,7 +18,7 @@ export default class Navigation extends React.Component {
               <img src={CloseButton} alt='close button' />
             </Button>
           </div>
-          <div className='navigation__inner col-xs-12 col-sm-5'>
+          <div className='navigation__inner col-xs-12 col-sm-6'>
             <div className='navigation__description'>
               Earth to Her is an essential, guiding practice for
               cannabis lovers centered in feminine energy and self-discovery.
