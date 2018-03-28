@@ -39,7 +39,7 @@ body {
   overflow: hidden;
 }
 
-.main{
+.main {
   overflow-x: hidden;
   
   &__wrapper {
@@ -58,16 +58,21 @@ body {
   }
 
   &__video-wrapper {
-
     &--video-overlay {
       animation: opacityOverlay 1s forwards;
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    &__video {
-      img {
-        width: 100%;
+    @media only screen and (max-width: 768px) {
+
+      &__video-wrapper {
+        &--video-overlay {
+          animation: none;
+        }
+      &__video {
+        img {
+          width: 100%;
+        }
       }
     }
   }

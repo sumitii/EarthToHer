@@ -7,26 +7,6 @@
        url('../../assets/Favorit/OTF/Favorit_Light.otf') format('opentype'), /* IE6-IE8 */
 }
 
-@keyframes slideOpen {
-  0% {
-		transform: translateX(100%);
-	}	
-	100% {
-		transform: translateX(0%);
-	}	
-}
-
-@keyframes slideClosed {
-  0% {
-    transform: translateX(0%);
-    width: 100%;
-	}	
-	100% {
-    transform: translateX(100%);
-    width: 0;
-	}	
-}
-
 .navigation {
   font-family: 'Favorit Light';
   justify-content: flex-end;
@@ -34,8 +14,8 @@
   z-index: 100;
   top: 0;
   position: absolute;
-  transform: translateX(100%);
   transition: transform 750ms ease-in;
+  height: 100vh;
 
   &__active {
     transform: translateX(0);
@@ -51,7 +31,6 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
-    height: 100vh;
     padding: 0;
   }
 
@@ -89,9 +68,12 @@
   }
 
   @media only screen and (max-width: 768px) {
-    &__description {
-      font-size: 1em;
-      line-height: 26px;
+    .navigation {
+      height: auto;
+      &__description {
+        font-size: 1em;
+        line-height: 26px;
+      }
     }
   }
 }

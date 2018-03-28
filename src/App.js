@@ -27,9 +27,7 @@ class App extends Component {
           headerCopy='Earth to Her'
           onClick={this.toggleNavigation.bind(this)}
         />
-        <div className={`main__video-wrapper${this.state.isNavigationHidden ? '' : '--video-overlay'}`}>
-          <VideoWrapper />
-        </div>
+        <VideoWrapper />
         <div className='main__wrapper'>
           <div className='main__headerText'>
             <h2>Earth to Her</h2>
