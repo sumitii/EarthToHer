@@ -29,7 +29,7 @@ class App extends Component {
         />
         <VideoWrapper />
         <div className='main__wrapper'>
-          <div className='main__header'>
+          <div className='main__headerText'>
             <h2>Earth to Her</h2>
           </div>
         </div>

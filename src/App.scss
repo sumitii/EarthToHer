@@ -68,17 +68,15 @@ body {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    background-color: #d4996a;
+    height: 100vh;
+    background-color: #EF7B24;
     display: flex;
     flex: auto;
     max-height: 100%;
+  }
 
-    &::before {
-      content: '';
-      background-color: #EF7B24;
-      height: 100vh;
-      width: 60px;
-    }
+  &__headerText {
+    margin-left: 60px;
   }
 
   @media only screen and (max-width: 768px) {
