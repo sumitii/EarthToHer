@@ -87,4 +87,11 @@
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    &__description {
+      font-size: 1em;
+      line-height: 26px;
+    }
+  }
 }
