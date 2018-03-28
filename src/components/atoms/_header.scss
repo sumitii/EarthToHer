@@ -1,8 +1,25 @@
+
+@keyframes displayHeader {
+  0% {
+    opacity: 0;
+    z-index: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    z-index: 100;
+    display: block;
+  }
+}
+
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    z-index: 100;
+    animation: displayHeader 1.5s forwards;
+    opacity: 0;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
 
     &__items {
         display: flex;

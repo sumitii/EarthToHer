@@ -13,19 +13,6 @@
       url('./assets/Prophet/Prophet_Light.ttf') format('embedded-opentype'), /* IE6-IE8 */
 }
 
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(2000px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInVideo { from { opacity: 0; } to { opacity: 0.85; } }
-
 @keyframes opacityOverlay {
   0% {
     opacity: 0;
@@ -58,6 +45,7 @@ body {
   height: inherit;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .background-enter {
@@ -90,44 +78,6 @@ body {
       background-color: #EF7B24;
       height: 100vh;
       width: 60px;
-    }
-  }
-
-    &__slide-in {
-      animation: slideUp 1.5s forwards;
-      animation-timing-function: ease-in;
-      width: 100%;
-      height: 100%;
-      background-color: #D2BFAE;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  &__nav-active {
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        animation: opacityOverlay 2s forwards;
-      }
-    }
-
-  &__video {
-    animation: fadeInVideo 1s forwards;
-    animation-delay: 1s;
-    opacity: 0;
-
-    &--nav-video-active {
-      opacity: 1;
-      animation-delay: 0;
-      animation: none;
     }
   }
 

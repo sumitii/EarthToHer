@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import 'flexboxgrid/css/flexboxgrid.min.css'
-import faker from 'faker'
 import Navigation from './components/atoms/Navigation'
-import Button from './components/atoms/Button'
 import Header from './components/atoms/Header'
-import Footer from './components/atoms/Footer'
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import VideoWrapper from './components/atoms/VideoWrapper'
 import './App.scss'
 
 class App extends Component {
@@ -30,11 +27,7 @@ class App extends Component {
           headerCopy='Earth to Her'
           onClick={this.toggleNavigation.bind(this)}
         />
-        <div className={`main__slide-in ${this.state.isNavigationHidden ? '' : 'main__nav-active'}`}>
-          <div className={`main__video${this.state.isNavigationHidden ? '' : '--nav-video-active'}`}>
-            <img src={faker.image.image()} alt='earth-to-her-video' />
-          </div>
-        </div>
+        <VideoWrapper />
         <div className='main__wrapper'>
           <div className='main__header'>
             <h2>Earth to Her</h2>
