@@ -28,6 +28,7 @@
   position: absolute;
   bottom: 0;
   background-color: #D2BFAE;
+  overflow-y: scroll;
 
   &__slide-in {
     animation: slideUp 1.5s forwards;
@@ -46,6 +47,8 @@
     &__wrapper {
       max-width: 100%;
       width: 100%;
+      margin-top: 0;
+      bottom: clear;
 
       iframe {
         width: 100%;

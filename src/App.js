@@ -30,7 +30,7 @@ class App extends Component {
           onClick={this.toggleNavigation.bind(this)}
         />
         <VideoWrapper />
-        <div className='main__wrapper'>
+        <div className='main__logoWrapper'>
           <img
             src={EarthToHerLogoWhite}
             alt='Earth to Her Logo - White'

@@ -33,20 +33,17 @@ body {
   letter-spacing: 0.4px;
   font-weight: 400;
   color: #FFF;
-  height: inherit;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
   overflow: hidden;
 }
 
-.main {
-  overflow-x: hidden;
-  
-  &__wrapper {
+.main {  
+  background-color: #EF7B24;
+  height: 100vh;
+  &__logoWrapper {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    height: 100vh;
     background-color: #EF7B24;
     display: flex;
     flex: auto;
