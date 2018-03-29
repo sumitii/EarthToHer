@@ -4,6 +4,8 @@ import 'flexboxgrid/css/flexboxgrid.min.css'
 import Navigation from './components/atoms/Navigation'
 import Header from './components/atoms/Header'
 import VideoWrapper from './components/atoms/VideoWrapper'
+import EarthToHerLogoWhite from './assets/earthtoher_logo.svg'
+
 import './App.scss'
 
 class App extends Component {
@@ -29,9 +31,10 @@ class App extends Component {
         />
         <VideoWrapper />
         <div className='main__wrapper'>
-          <div className='main__headerText'>
-            <h2>Earth to Her</h2>
-          </div>
+          <img
+            src={EarthToHerLogoWhite}
+            alt='Earth to Her Logo - White'
+          />
         </div>
           <Navigation
             closeNavigation={this.toggleNavigation.bind(this)}

@@ -18,8 +18,8 @@ export default class VideoWrapper extends React.Component {
           <iframe
             title='Earth to Her Video'
             src="https://player.vimeo.com/video/262122164"
-            width="640"
-            height="360"
+            width="900"
+            height="560"
             frameBorder="0"
             allowFullScreen>
           </iframe>

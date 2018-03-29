@@ -51,10 +51,7 @@ body {
     display: flex;
     flex: auto;
     max-height: 100%;
-  }
-
-  &__headerText {
-    margin-left: 60px;
+    padding-left: 60px;
   }
 
   &__video-wrapper {
