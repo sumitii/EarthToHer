@@ -31,7 +31,7 @@
   overflow-y: scroll;
 
   &__slide-in {
-    animation: slideUp 1.5s forwards;
+    animation: slideUp 1500ms forwards;
     animation-timing-function: ease-in;
   }
 

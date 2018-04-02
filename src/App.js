@@ -4,7 +4,7 @@ import 'flexboxgrid/css/flexboxgrid.min.css'
 import Navigation from './components/atoms/Navigation'
 import Header from './components/atoms/Header'
 import VideoWrapper from './components/atoms/VideoWrapper'
-import EarthToHerLogoWhite from './assets/earthtoher_logo.svg'
+import EarthToHerLogo from './assets/earthtoher_logo_black.svg'
 
 import './App.scss'
 
@@ -33,7 +33,7 @@ class App extends Component {
         <div className={`main__overlay main__overlay--${this.state.isNavigationHidden ? 'inactive' : 'active'}`} />
         <div className='main__logoWrapper'>
           <img
-            src={EarthToHerLogoWhite}
+            src={EarthToHerLogo}
             alt='Earth to Her Logo - White'
             className='main__logo'
           />

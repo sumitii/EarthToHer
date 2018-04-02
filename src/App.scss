@@ -70,10 +70,13 @@ body {
     flex: auto;
     max-height: 100%;
     padding-left: 60px;
+    z-index: -100;
   }
   &__logo {
-    width: auto;
+    width: 180px;
+    filter: invert(100%);
   }
+
   &__video-wrapper {
     &--video-overlay {
       animation: opacityOverlay 1s forwards;
@@ -85,9 +88,6 @@ body {
       }
       &__logoWrapper {
         padding-left: 40px;
-      }
-      &__logo {
-        width: 250px;
       }
       &__video-wrapper {
         &--video-overlay {
