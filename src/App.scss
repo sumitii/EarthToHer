@@ -40,6 +40,26 @@ body {
 .main {
   overflow-x: hidden;
 
+  &__overlay {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1000ms 0, opacity 1000ms ease;
+    background-color: #EF7B24;
+
+    &--inactive {
+      display: none;
+    }
+    &--active {
+      opacity: .5;
+      z-index: 999;
+      visibility: visible;
+      // background: rgba(239, 123, 36, 0.65);
+      z-index: 100;
+    }
+  }
   &__logoWrapper {
     align-items: center;
     justify-content: flex-start;
@@ -60,6 +80,9 @@ body {
     }
   }
     @media only screen and (max-width: 768px) {
+      &__overlay {
+        display: none;
+      }
       &__logoWrapper {
         padding-left: 40px;
       }

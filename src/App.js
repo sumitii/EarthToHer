@@ -30,6 +30,7 @@ class App extends Component {
           onClick={this.toggleNavigation.bind(this)}
         />
          <VideoWrapper />
+        <div className={`main__overlay main__overlay--${this.state.isNavigationHidden ? 'inactive' : 'active'}`} />
         <div className='main__logoWrapper'>
           <img
             src={EarthToHerLogoWhite}
