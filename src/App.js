@@ -34,6 +34,7 @@ class App extends Component {
           <img
             src={EarthToHerLogoWhite}
             alt='Earth to Her Logo - White'
+            className='main__logo'
           />
         </div>
           <Navigation
