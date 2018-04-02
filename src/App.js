@@ -29,7 +29,7 @@ class App extends Component {
           headerCopy='Earth to Her'
           onClick={this.toggleNavigation.bind(this)}
         />
-        <VideoWrapper />
+         <VideoWrapper />
         <div className='main__logoWrapper'>
           <img
             src={EarthToHerLogoWhite}
