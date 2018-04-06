@@ -21,7 +21,7 @@ export default class VideoWrapper extends React.Component {
             width="900"
             height="560"
             frameBorder="0"
-            webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+            allowFullScreen>
           </iframe>
         </div>
       </div>
