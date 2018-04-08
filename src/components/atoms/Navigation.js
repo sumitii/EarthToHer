@@ -24,8 +24,8 @@ export default class Navigation extends React.Component {
               Led by multimedia artist Tina Snow Le, Earth To Her challenges the visual culture of cannabis, and explores the essentials of well-being, through the lens of design.
               <br/>
               <br/>
-              Earth To Her presents: <br />
-              INNER SPACE <br />
+              Earth To Her presents:<br />
+              INNER SPACE<br />
               April 6th - April 27th, 2018<br />
               One Grand Gallery<br />
               Portland, Oregon
