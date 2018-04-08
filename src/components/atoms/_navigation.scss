@@ -1,14 +1,13 @@
 
 @font-face {
-  font-family: 'Favorit Light';
+  font-family: 'Favorit Mono Light';
   font-style: normal;
   font-weight: 200;
-  src: local('Favorit Light'), local('FavoritLight'),
-       url('../../assets/Favorit/OTF/Favorit_Light.otf') format('opentype'), /* IE6-IE8 */
+  src: url('../../assets/favorit-mono-light.woff') format('woff'), /* IE6-IE8 */
 }
 
 .navigation {
-  font-family: 'Favorit Light';
+  font-family: 'Favorit Mono Light';
   justify-content: flex-end;
   color: #FFF;
   z-index: 100;
@@ -16,11 +15,12 @@
   position: fixed;
   transform: translate3d(2000px,0,0);
   right: 0;
-  transition: transform 750ms ease-in-out;
+  transition: transform 1000ms ease-in-out;
   height: 100%;
 
   &__active {
     transform: translate3d(0,0,0);
+    transition: transform 1000ms ease-in-out;
   }
   
   &__inner {
