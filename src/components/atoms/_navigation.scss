@@ -1,13 +1,13 @@
 
 @font-face {
-  font-family: 'Favorit Mono Light';
+  font-family: 'Favorit Light';
   font-style: normal;
   font-weight: 200;
-  src: url('../../assets/favorit-mono-light.woff') format('woff'), /* IE6-IE8 */
+  src: url('../../assets/Favorit-Light.woff') format('woff'), /* IE6-IE8 */
 }
 
 .navigation {
-  font-family: 'Favorit Mono Light';
+  font-family: 'Favorit Light';
   justify-content: flex-end;
   color: #FFF;
   z-index: 100;
@@ -39,9 +39,9 @@
   }
 
   &__description {
-    line-height: 29px;
+    line-height: 30px;
     text-align: right;
-    font-size: 16px;
+    font-size: 18px;
     width: 85%;
     margin: 112px auto 0;
   }
