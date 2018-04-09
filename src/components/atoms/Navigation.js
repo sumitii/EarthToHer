@@ -20,7 +20,7 @@ export default class Navigation extends React.Component {
           </div>
           <div className='navigation__inner col-xs-12 col-sm-6'>
             <div className='navigation__description'>
-              A guiding practice for feminine energy and self-discovery.<br/>
+              A guiding practice for feminine energy and self-discovery.<br/><br/>
               Led by multimedia artist Tina Snow Le, Earth To Her challenges the visual culture of cannabis, and explores the essentials of well-being, through the lens of design.
               <br/>
               <br/>
